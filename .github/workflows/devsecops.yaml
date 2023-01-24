@@ -48,12 +48,7 @@ jobs:
       - name: Echo Deploying Going on
         run: echo "Deploying going on"
 
-name: Security check - Bandit
-
-on: push
-
-jobs:
-  build:
+  build-bandit:
     runs-on: ubuntu-latest
     strategy:
       matrix:
